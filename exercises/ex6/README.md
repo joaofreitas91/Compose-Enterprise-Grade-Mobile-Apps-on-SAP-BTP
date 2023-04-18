@@ -3,14 +3,14 @@
 Neste exercício, adicionaremos uma seção de Menu de Usuário à página Visão geral da aplicação. Como as funções no Menu de Usuário são genéricas e podem ser aplicadas a quase qualquer aplicação MDK, o Menu de Usuário foi pré-criado e será adicionado à aplicação como um Componente MDK.
 
 - [Exercise 6 - Adicionar uma seção de Menu de Usuário à aplicação](#exercise-6---adicionar-uma-seção-de-menu-de-usuário-à-aplicação)
-  - [Exercise 6.1 - Copie a aplicação UserMenuComponent para o seu espaço de trabalho](#exercise-61---copie-a-aplicação-usermenucomponent-para-o-seu-espaço-de-trabalho)
-  - [Exercise 6.2 - Copie as configurações da aplicação Component para a aplicação Base e modifique-as](#exercise-62---copie-as-configurações-da-aplicação-component-para-a-aplicação-base-e-modifique-as)
+    - [Exercise 6.1 - Copie a aplicação UserMenuComponent para o seu espaço de trabalho](#exercise-61---copie-a-aplicação-usermenucomponent-para-o-seu-espaço-de-trabalho)
+    - [Exercise 6.2 - Copie as configurações da aplicação Component para a aplicação Base e modifique-as](#exercise-62---copie-as-configurações-da-aplicação-component-para-a-aplicação-base-e-modifique-as)
     - [Exercise 6.3 - Atualizar as Aplicações de Referência](#exercise-63---atualizar-as-aplicações-de-referência)
     - [Exercício 6.4 - Criar um arquivo CIM para o Componente de Menu do Usuário](#exercício-64---criar-um-arquivo-cim-para-o-componente-de-menu-do-usuário)
     - [Exercício 6.5 - Adicione a seção do menu lateral do usuário](#exercício-65---adicione-a-seção-do-menu-lateral-do-usuário)
     - [Exercício 6.6 - Redeploy da aplicação](#exercício-66---redeploy-da-aplicação)
     - [Exercício 6.7 - Atualize o aplicativo MDK com novos metadados](#exercício-67---atualize-o-aplicativo-mdk-com-novos-metadados)
-  - [Resumo](#resumo)
+- [Resumo](#resumo)
 
 O Menu de Usuário contém os seguintes itens.
 | Opção de Menu          | Descrição                                                                                                                                                                                            |

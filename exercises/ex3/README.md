@@ -27,7 +27,7 @@ Seria mais significativo se exibíssemos:
 - dimensões adicionais do produto, como Largura e Altura, juntamente com sua unidade, em vez de mostrar apenas a Profundidade.
 - o preço do Produto com o código da moeda (formatador), em vez de apenas o código da moeda.
 
-1. Navegue até `Páginas` | `Produtos` | `Products_List.page` e selecione o controle Object Table.
+1. Navegue até `Pages` | `Products` | `Products_List.page` e selecione o controle Object Table.
 2. A propriedade Description do controle está atualmente vinculada à propriedade OData *{Category}*. Você substituirá esse vínculo pela dimensão do Produto.
     * Clique no ícone de link para a propriedade **Description**. Isso abrirá o Navegador de objetos.
     * Corte ou remova a expressão padrão no navegador de objetos.
@@ -98,13 +98,13 @@ A barra de feedback de filtro é uma barra horizontal que aparece (na Tabela Set
 
 4. Forneça as seguintes informações:
 
-    | Propriedade    | Valor                                |
-    | -------------- | ------------------------------------ |
-    | `DisplayValue` | Nome                                 |
-    | `FilterType`   | Escolha *Ordenador* no menu suspenso |
-    | `Label`        | Ordenar por                          |
-    | `Name`         | OrderByName                          |
-    | `ReturnValue`  | Nome                                 |
+    | Propriedade    | Valor                             |
+    | -------------- | --------------------------------- |
+    | `DisplayValue` | Name                              |
+    | `FilterType`   | Escolha *Sorter* no menu suspenso |
+    | `Label`        | Order By                          |
+    | `Name`         | OrderByName                       |
+    | `ReturnValue`  | Name                              |
 
     ![MDK](images/3.2.4.png)
 
@@ -114,13 +114,13 @@ A barra de feedback de filtro é uma barra horizontal que aparece (na Tabela Set
 
 6. Forneça as seguintes informações para o segundo item:
 
-    | Propriedade    | Valor                                |
-    | -------------- | ------------------------------------ |
-    | `DisplayValue` | Preço                                |
-    | `FilterType`   | Escolha *Ordenador* no menu suspenso |
-    | `Label`        | Ordenar por                          |
-    | `Name`         | OrderByPrice                         |
-    | `ReturnValue`  | Preço                                |
+    | Propriedade    | Valor                             |
+    | -------------- | --------------------------------- |
+    | `DisplayValue` | Price                             |
+    | `FilterType`   | Escolha *Sorter* no menu suspenso |
+    | `Label`        | Order by                          |
+    | `Name`         | OrderByPrice                      |
+    | `ReturnValue`  | Price                             |
 
     ![MDK](images/3.2.6.png)
 
@@ -128,10 +128,10 @@ A barra de feedback de filtro é uma barra horizontal que aparece (na Tabela Set
 
     | Propriedade        | Valor                             |
     | ------------------ | --------------------------------- |
-    | `CustomQueryGroup` | Altura                            |
+    | `CustomQueryGroup` | Height                            |
     | `DisplayValue`     | > 30                              |
-    | `FilterType`       | Escolha *Filtro* no menu suspenso |
-    | `Label`            | Altura                            |
+    | `FilterType`       | Escolha *Filter* no menu suspenso |
+    | `Label`            | Height                            |
     | `Name`             | FilterByHeight                    |
     | `ReturnValue`      | DimensionHeight gt 30             |
 
@@ -141,10 +141,10 @@ A barra de feedback de filtro é uma barra horizontal que aparece (na Tabela Set
 
     | Propriedade        | Valor                             |
     | ------------------ | --------------------------------- |
-    | `CustomQueryGroup` | Categoria                         |
+    | `CustomQueryGroup` | Category                          |
     | `DisplayValue`     | Notebooks                         |
     | `FilterProperty`   | CategoryName                      |
-    | `FilterType`       | Escolha *Filtro* no menu suspenso |
+    | `FilterType`       | Escolha *Filter* no menu suspenso |
     | `Name`             | FilterByCategoryName              |
     | `ReturnValue`      | Notebooks                         |
 

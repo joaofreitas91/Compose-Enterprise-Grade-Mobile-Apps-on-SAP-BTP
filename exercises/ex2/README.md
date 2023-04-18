@@ -13,11 +13,11 @@ Neste exercício, você irá criar uma aplicação MDK a partir de um modelo.
 ### Exercício 2.1 - Configurar seu Serviço OData como Destino em Serviços Móveis
 
 1. Acesse o Cockpit de Serviços Móveis. Se a sessão dos Serviços Móveis tiver expirado, faça login novamente.
-2. Navegue até *SAP MDK App - TechEd 2022 AD181* (`com.sap.teched.ad181`) e selecione **Conectividade Móvel** em Recursos atribuídos.
+2. Navegue até *SAP MDK App - TechEd 2022 AD181* (`com.sap.teched.ad181`) e selecione **Mobile Connectivity** em Recursos atribuídos.
 
     ![MDK](images/2.1.1.png)
 
-3. Clique no ícone **Criar** para adicionar um novo destino.
+3. Clique no ícone **Create** para adicionar um novo destino.
    
     ![MDK](images/2.1.2.png)
 
@@ -54,7 +54,7 @@ Neste exercício, você irá criar uma aplicação MDK a partir de um modelo.
 
 ### Exercício 2.2 - Criar o projeto MDKApp a partir de um modelo
 
-1. Acesse sua página do SAP Business Application Studio. No seu espaço Dev, clique em **Começar a partir de modelo** na página Get Started.
+1. Acesse sua página do SAP Business Application Studio. No seu espaço Dev, clique em **Start from template** na página Get Started.
 
     ![MDK](images/2.2.1.png)
 

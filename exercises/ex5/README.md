@@ -22,7 +22,7 @@ A página de navegação de gaveta lateral fornece uma opção de navegação de
 
     ![MDK](images/5.1.2.png)
 
-3. Insira o `Nome da Página` como **Visão geral** e clique em `Next` e `Finish` na etapa de confirmação.
+3. Insira o `Nome da Página` como **Overview** e clique em `Next` e `Finish` na etapa de confirmação.
 
     ![MDK](images/5.1.3.png)
 
@@ -52,13 +52,13 @@ A página de navegação de gaveta lateral fornece uma opção de navegação de
     | Propriedade  | Valor                                                                                                |
     | ------------ | ---------------------------------------------------------------------------------------------------- |
     | `Image`      | sap-icon://customer                                                                                  |
-    | `Name`       | Clientes                                                                                             |
+    | `Name`       | Customers                                                                                            |
     | `PageToOpen` | clique no ícone de 3 pontos, selecione o `Object Browser` e vincule-o à página *Customers_List.page* |
-    | `Title`      | Clientes                                                                                             |
+    | `Title`      | Customers                                                                                            |
 
       ![MDK](images/5.1.7.png)
 
-    Agora você verá que o item da seção do Drawer lateral está vinculado a Clientes.
+    Agora você verá que o item da seção do Drawer lateral está vinculado a Clients.
 
     ![MDK](images/5.1.8.png)
 
@@ -77,9 +77,9 @@ Agora você adicionará itens adicionais para exibir outras informações.
     | Propriedade  | Valor                                                                                                     |
     | ------------ | --------------------------------------------------------------------------------------------------------- |
     | `Imagem`     | sap-icon://product                                                                                        |
-    | `Nome`       | Produtos                                                                                                  |
+    | `Nome`       | Products                                                                                                  |
     | `PageToOpen` | clique no ícone de 3 pontos, selecione o `Navegador de objetos` e vincule-o à página *Products_List.page* |
-    | `Título`     | Produtos                                                                                                  |
+    | `Título`     | Products                                                                                                  |
 
     ![MDK](images/5.2.2.png)
 
@@ -88,9 +88,9 @@ Agora você adicionará itens adicionais para exibir outras informações.
     | Propriedade  | Valor                                                                                                      |
     | ------------ | ---------------------------------------------------------------------------------------------------------- |
     | `Imagem`     | sap-icon://supplier                                                                                        |
-    | `Nome`       | Fornecedores                                                                                               |
+    | `Nome`       | Suppliers                                                                                                  |
     | `PageToOpen` | clique no ícone de 3 pontos, selecione o `Navegador de objetos` e vincule-o à página *Suppliers_List.page* |
-    | `Título`     | Fornecedores                                                                                               |
+    | `Título`     | Suppliers                                                                                                  |
 
     ![MDK](images/5.2.3.png)
 
@@ -99,9 +99,9 @@ Agora você adicionará itens adicionais para exibir outras informações.
     | Propriedade  | Valor                                                                                                              |
     | ------------ | ------------------------------------------------------------------------------------------------------------------ |
     | `Imagem`     | sap-icon://sales-order                                                                                             |
-    | `Nome`       | Pedidos de venda                                                                                                   |
+    | `Nome`       | Sales Order                                                                                                        |
     | `PageToOpen` | clique no ícone de 3 pontos, selecione o `Navegador de objetos` e vincule-o à página *SalesOrderHeaders_List.page* |
-    | `Título`     | Pedidos de venda                                                                                                   |
+    | `Título`     | Sales Order                                                                                                        |
 
     ![MDK](images/5.2.4.png)
 

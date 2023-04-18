@@ -13,7 +13,7 @@ A entidade Produto é uma entidade de mídia OData com a propriedade OData `Pict
 
 ### Exercício 4.1 - Adicionar uma caixa de mensagem genérica
 
-1. Clique com o botão direito em `Actions`, clique em `MDK: Nova Ação` para criar uma nova ação.
+1. Clique com o botão direito em `Actions`, clique em `MDK: New Action` para criar uma nova ação.
 
     ![MDK](images/4.0.1.png)
 

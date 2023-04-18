@@ -7,12 +7,11 @@ Neste exercício, você implantará seu projeto SAP Cloud Application Programmin
   - [Exercício 1.2 - Implantar um projeto CAP na SAP Business Technology Platform](#exercício-12---implantar-um-projeto-cap-na-sap-business-technology-platform)
   - [Resumo](#resumo)
 
-
 ### Exercício 1.1 - Alterar o espaço de trabalho para a pasta de projetos
 
 1. Inicie o SAP Business Application Studio ou acesse-o em https://account.hanatrial.ondemand.com.
 
-2. Altere seu espaço de trabalho para a pasta `projects`. Clique no ícone Explorer e clique em **Abrir pasta**.
+2. Altere seu espaço de trabalho para a pasta `projects`. Clique no ícone Explorer e clique em **Open Folder**.
 
     ![MDK](images/1.1.1.png)
 
@@ -29,7 +28,7 @@ Neste exercício, você implantará seu projeto SAP Cloud Application Programmin
 > Antes de implantar o projeto CAP, certifique-se de que sua instância da nuvem do HANA está em execução.
 >  ![BTP Cockpit](images/1.1.0.png)
 
-1. Navegue até o menu `Terminal` | `Novo Terminal`. 
+1. Navegue até o menu `Terminal` | `New Terminal`. 
 
     ![MDK](images/1.2.1.png)
 
@@ -85,7 +84,7 @@ Neste exercício, você implantará seu projeto SAP Cloud Application Programmin
 
     ![MDK](images/1.2.8.png) 
 
-    **Faça uma nota deste URL, pois você configurará este endpoint como um Destino nos Serviços Móveis.**
+    **Faça uma nota deste URL, pois você configurará este endpoint como uma destination nos Serviços Móveis.**
 
     > Se você ver a saída em formato Raw, pode instalar qualquer extensão `JSON formatter` no seu navegador para obter uma saída analisada de maneira mais estruturada.
 
@@ -93,6 +92,5 @@ Neste exercício, você implantará seu projeto SAP Cloud Application Programmin
 
 Agora você gerou um serviço OData com base no Modelo de Programação de Nuvem SAP (CAP).
 
-Continue para - [Exercício 2 - Criar um aplicativo a partir do modelo MDK
-
+Continue para - [Exercício 2 - Criar um aplicativo a partir do modelo MDK](../ex2/README.md)
 

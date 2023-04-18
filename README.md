@@ -4,7 +4,7 @@
 
 ## Descrição
 
-Este repositório contém o material para a sessão SAP TechEd 2022 *AD181 - Componha aplicativos móveis empresariais no SAP BTP.* Se você planeja seguir ao vivo durante a sessão prática, planeje concluir a seção Requisitos *antes* do início da sessão ao vivo. O workshop começará com o exercício Introdução e pressupõe que os requisitos já foram concluídos.
+Este repositório contém o material para a sessão SAP TechEd 2022 *AD181 - Componha aplicativos móveis empresariais no SAP BTP.* Se você planeja seguir ao vivo durante a sessão prática, se planeje para concluir a seção Requisitos *antes* do início da sessão ao vivo. O workshop começará com o exercício Introdução e pressupõe que os requisitos já foram concluídos.
 
 ## Requisitos
 

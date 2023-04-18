@@ -18,7 +18,7 @@ Assim que você tiver sua subconta BTP configurada na região exigida, comece a 
 
 1. No cockpit do trial do [SAP BTP](https://account.hanatrial.ondemand.com/trial), navegue até sua subconta.
 
-2. Clique em **Direitos** no menu à esquerda.
+2. Clique em **`Entitlements`** no menu à esquerda.
 
     ![BTP Cockpit](images/img-1.png)
 
@@ -30,7 +30,7 @@ Assim que você tiver sua subconta BTP configurada na região exigida, comece a 
 
     ![BTP Cockpit](images/img-1.1.png)
 
-    Se você já adicionou os direitos necessários em sua conta trial, continue com a etapa 8 para criar sua instância de trial do SAP HANA Cloud, banco de dados SAP HANA.
+    Se você já adicionou os direitos necessários em sua conta trial, continue com a etapa 8 para criar sua instância de trial do SAP HANA Cloud, SAP HANA Database.
     Se você não tiver os direitos necessários em sua conta trial, continue com a próxima etapa.
 
 4. Se você não tiver nenhum dos direitos acima, precisará adicioná-los à sua conta. Para fazer isso, clique em **Configurar Direitos** no canto superior direito da tela.
@@ -51,41 +51,41 @@ Assim que você tiver sua subconta BTP configurada na região exigida, comece a 
 
     ![BTP Cockpit](images/img-1.5.png)
 
-    Você agora adicionou a concessão SAP HANA Cloud à sua conta trial existente no SAP BTP! Agora você criará sua instância de trial do SAP HANA Cloud, banco de dados SAP HANA.
+    Você agora adicionou a concessão SAP HANA Cloud à sua conta trial existente no SAP BTP! Agora você criará sua instância de trial do SAP HANA Cloud, SAP HANA Database.
 
-8. Navegue até o SAP BTP Cockpit e clique no seu espaço em `Spaces`.
+8. Navegue até a Home do SAP BTP Cockpit e clique no seu espaço em `Spaces`.
 
     ![BTP Cockpit](images/img-1.5.1.png)
 
-9. No menu à esquerda da tela, clique em **SAP HANA Cloud** > **Criar** > **Banco de dados SAP HANA**.
+9. No menu à esquerda da tela, clique em **SAP HANA Cloud** > **Criar** > **SAP HANA Database**.
 
     ![BTP Cockpit](images/img-1.6.png)
 
-9. Uma nova guia será aberta no **SAP HANA Cloud Central**, escolha a instância **SAP HANA Cloud, Banco de dados SAP HANA** e clique em **Próxima etapa** para continuar.
+10. Uma nova guia será aberta no **SAP HANA Cloud Central**, escolha a instância **SAP HANA Cloud, SAP HANA Database** e clique em **Próxima etapa** para continuar.
 
     ![BTP Cockpit](images/img-1.7.png)
 
-10. Forneça um nome de instância, senha do administrador e confirme a senha do administrador. Clique em **Próxima etapa**.
+11. Forneça um nome de instância, senha do administrador e confirme a senha do administrador. Clique em **Próxima etapa**.
 
   ![BTP Cockpit](images/img-1.8.png)
 
-11. Na etapa **Banco de dados SAP HANA**, mantenha a memória padrão e clique em **Próxima etapa**.
+11. Na etapa **SAP HANA Database**, mantenha a memória padrão e clique em **Próxima etapa**.
 
   ![BTP Cockpit](images/img-1.9.png)
 
-12. **Zona de disponibilidade e réplicas do banco de dados SAP HANA** não é aplicável no BTP trial, clique em **Próxima etapa**.
+12. **Zona de disponibilidade e réplicas do SAP HANA Database** não é aplicável no BTP trial, clique em **Próxima etapa**.
 
   ![BTP Cockpit](images/img-1.10.png)
     
-13. Na etapa **Configurações avançadas do banco de dados SAP HANA**, certifique-se de selecionar **Permitir todos os endereços IP** e clique em **Próxima etapa**.
+1.  Na etapa **Configurações avançadas do SAP HANA Database**, certifique-se de selecionar **`Allow all IP address`** e clique em **Próxima etapa**.
 
   ![BTP Cockpit](images/img-1.11.png)
 
-14. Na etapa **Data Lake**, mantenha a configuração padrão como está e clique em **Revisar e criar**.
+14. Na etapa **Data Lake**, mantenha a configuração padrão como está e clique em **Review and Create**.
 
   ![BTP Cockpit](images/img-1.12.png)
 
-15. Reveja as informações da instância e clique em **Criar instância**.
+15. Reveja as informações da instância e clique em **Create Instance**.
 
   ![BTP Cockpit](images/img-1.13.png)
 
@@ -183,7 +183,7 @@ Você criará a configuração inicial do aplicativo no cockpit do SAP Mobile Se
     >- Em seu cockpit SAP BTP, navegue até `Serviços` |  `Instâncias e assinaturas` e crie uma instância de **Mobile Services**.
       >    ![BTP Cockpit](images/img-2.5.2.png)  
       >    ![BTP Cockpit](images/img-2.5.3.png)  
-    >- Depois de criar uma nova instância de Mobile Services, clique no ícone de 3 pontos e selecione o link **Abrir painel** para abrir o cockpit do SAP Mobile Services. 
+    >- Depois de criar uma nova instância de Mobile Services, clique no ícone de 3 pontos e selecione o link **View Dashboard** para abrir o cockpit do SAP Mobile Services. 
       >    ![BTP Cockpit](images/img-2.5.4.png)  
     >- Escolha seu provedor de identidade, se solicitado. A página do cockpit de SAP Mobile Services é aberta. Restaure o aplicativo para repará-lo, se necessário. 
       >    ![BTP Cockpit](images/img-2.5.5.png)
@@ -207,7 +207,7 @@ Você criará a configuração inicial do aplicativo no cockpit do SAP Mobile Se
 
     ![BTP Cockpit](images/img-2.8.png) 
 
-10. Na etapa **Atribuir recursos**, escolha **Aplicativo Mobile Development Kit** no menu suspenso e clique em **Concluir**.
+10. Na etapa **Atribuir recursos**, escolha **Aplicativo Mobile Development Kit** no menu suspenso e clique em **Finish**.
 
     ![BTP Cockpit](images/img-2.9.png) 
 
@@ -217,11 +217,11 @@ Você criará a configuração inicial do aplicativo no cockpit do SAP Mobile Se
 
      ![BTP Cockpit](images/img-2.10.png)
 
-11. Clique em **Troca de Configurações Mobile**, defina o **Tempo de Bloqueio** para 120 segundos. Esse valor define por quanto tempo o aplicativo pode ficar inativo antes que o usuário precise inserir o código de acesso do aplicativo novamente para continuar a usá-lo. 
+11. Clique em **Mobile Settings Exchange**, defina o **Lock Timeout** para 120 segundos. Esse valor define por quanto tempo o aplicativo pode ficar inativo antes que o usuário precise inserir o código de acesso do aplicativo novamente para continuar a usá-lo. 
 
     ![BTP Cockpit](images/img-2.11.png)
 
-Salve o URL do **Cockpit de Serviços Mobile** nos seus favoritos para acessá-lo rapidamente, pois você visitará esta página novamente para adicionar um destino. 
+Salve o URL do **Cockpit de Serviços Mobile** nos seus favoritos para acessá-lo rapidamente, pois você visitará esta página novamente para adicionar uma destination.
 
 ### Baixe o Cliente SAP Mobile Services no seu dispositivo
 
