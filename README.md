@@ -21,10 +21,6 @@ Estes são os passos da nossa sessão prática:
 - [Exercício 5 - Usar a navegação Side Drawer para o seu aplicativo](exercises/ex5/README.md)
 - [Exercício 6 - Adicionar uma seção de menu de usuário ao aplicativo](exercises/ex5/README.md)
 
-## Como obter suporte
-
-O suporte para o conteúdo deste repositório está disponível durante o tempo real da sessão on-line para a qual este conteúdo foi projetado. Caso contrário, você pode solicitar suporte por meio da guia [Issues](../../issues).
-
 ## Recursos adicionais de suporte e aprendizagem
 
 - Visite-nos na [Comunidade SAP](https://community.sap.com/topics/mobile-technology)

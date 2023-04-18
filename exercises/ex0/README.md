@@ -26,28 +26,28 @@ Assim que você tiver sua subconta BTP configurada na região exigida, comece a 
 
     - SAP HANA Cloud: `hana-cloud-connection`, `hana` e `relational-data-lake`
 
-    - Esquemas e contêineres HDI do SAP HANA: `hdi-shared`, `schema`, `sbss` e `securestore`
+    - SAP HANA Schemas & HDI Containers: `hdi-shared`, `schema`, `sbss` e `securestore`
 
     ![BTP Cockpit](images/img-1.1.png)
 
     Se você já adicionou os direitos necessários em sua conta trial, continue com a etapa 8 para criar sua instância de trial do SAP HANA Cloud, SAP HANA Database.
     Se você não tiver os direitos necessários em sua conta trial, continue com a próxima etapa.
 
-4. Se você não tiver nenhum dos direitos acima, precisará adicioná-los à sua conta. Para fazer isso, clique em **Configurar Direitos** no canto superior direito da tela.
+4. Se você não tiver nenhum dos direitos acima, precisará adicioná-los à sua conta. Para fazer isso, clique em **Configure Entitlements** no canto superior direito da tela.
 
     ![BTP Cockpit](images/img-1.2.png)
 
-5. Clique em **Adicionar planos de serviços** na mesma área da tela.
+5. Clique em **Add Service Plans** na mesma área da tela.
 
     ![BTP Cockpit](images/img-1.3.png)
 
-6. Na janela que abrir, digite `HANA` na caixa de pesquisa para ver todas as concessões relevantes. Selecione todos os planos disponíveis para as concessões destacadas (**SAP HANA Cloud** e **SAP HANA Schemas e HDI Containers**) e clique em **Adicionar X planos de serviço**.
+6. Na janela que abrir, digite `HANA` na caixa de pesquisa para ver todas as concessões relevantes. Selecione todos os planos disponíveis para as concessões destacadas (**SAP HANA Cloud** e **SAP HANA Schemas e HDI Containers**) e clique em **Add X Service Plans**.
 
     ![BTP Cockpit](images/img-1.4.png)
 
     >A razão para não selecionar a concessão SAP HANA Schemas e HDI Containers (trial) é que ela é feita para um trial do Serviço SAP HANA, não para o SAP HANA Cloud.
 
-7. No canto superior direito da tela, certifique-se de clicar em **Salvar**.
+7. No canto superior direito da tela, certifique-se de clicar em **Save**.
 
     ![BTP Cockpit](images/img-1.5.png)
 
@@ -57,27 +57,27 @@ Assim que você tiver sua subconta BTP configurada na região exigida, comece a 
 
     ![BTP Cockpit](images/img-1.5.1.png)
 
-9. No menu à esquerda da tela, clique em **SAP HANA Cloud** > **Criar** > **SAP HANA Database**.
+9. No menu à esquerda da tela, clique em **SAP HANA Cloud** > **Create** > **SAP HANA Database**.
 
     ![BTP Cockpit](images/img-1.6.png)
 
-10. Uma nova guia será aberta no **SAP HANA Cloud Central**, escolha a instância **SAP HANA Cloud, SAP HANA Database** e clique em **Próxima etapa** para continuar.
+10. Uma nova guia será aberta no **SAP HANA Cloud Central**, escolha a instância **SAP HANA Cloud, SAP HANA Database** e clique em **Next Step** para continuar.
 
     ![BTP Cockpit](images/img-1.7.png)
 
-11. Forneça um nome de instância, senha do administrador e confirme a senha do administrador. Clique em **Próxima etapa**.
+11. Forneça um nome de instância, senha do administrador e confirme a senha do administrador. Clique em **Next Step**.
 
   ![BTP Cockpit](images/img-1.8.png)
 
-11. Na etapa **SAP HANA Database**, mantenha a memória padrão e clique em **Próxima etapa**.
+11. Na etapa **SAP HANA Database**, mantenha a memória padrão e clique em **Next Step**.
 
   ![BTP Cockpit](images/img-1.9.png)
 
-12. **Zona de disponibilidade e réplicas do SAP HANA Database** não é aplicável no BTP trial, clique em **Próxima etapa**.
+12. **Zona de disponibilidade e réplicas do SAP HANA Database** não é aplicável no BTP trial, clique em **Next Step**.
 
   ![BTP Cockpit](images/img-1.10.png)
     
-1.  Na etapa **Configurações avançadas do SAP HANA Database**, certifique-se de selecionar **`Allow all IP address`** e clique em **Próxima etapa**.
+1.  Na etapa **Configurações avançadas do SAP HANA Database**, certifique-se de selecionar **`Allow all IP address`** e clique em **Next Step**.
 
   ![BTP Cockpit](images/img-1.11.png)
 
@@ -115,9 +115,9 @@ Por favor, lembre-se:
 
   ![BTP Cockpit](images/img-3.4.png)
 
-2. Clique em **Criar espaço de desenvolvimento**. 
+2. Clique em **Create Dev Space**. 
 
-   Forneça um nome para o seu espaço de desenvolvimento, selecione **Aplicativo móvel SAP** como tipo de aplicativo. Selecione **Modelador gráfico CDS** e **Ferramentas CAP** como extensões SAP adicionais. Continue com **Criar espaço de desenvolvimento**.
+   Forneça um nome para o seu espaço de desenvolvimento, selecione **SAP Mobile Application** como tipo de aplicativo. Selecione **CDS Graphical Modeler** e **CAP Tools** como extensões SAP adicionais. Continue com **Create Dev Space**.
 
   ![BTP Cockpit](images/img-3.5.png)
 
@@ -132,7 +132,7 @@ Por favor, lembre-se:
 
 Antes de começar os exercícios da sessão, vamos clonar o repositório git da sessão para o espaço de trabalho do SAP Business Application Studio.
 
-1. Na página de Início, selecione `Clonar do Git`.
+1. Na página de Início, selecione `Clone from Git`.
 
   ![BAS](images/img-4.1.png)
 
@@ -152,11 +152,11 @@ Antes de começar os exercícios da sessão, vamos clonar o repositório git da 
 
 Você criará a configuração inicial do aplicativo no cockpit do SAP Mobile Services.
 
-1. No [cockpit de avaliação do SAP BTP](https://account.hanatrial.ondemand.com/trial), navegue até a sua subconta e clique nela.
+1. No [SAP BTP trial cockpit](https://account.hanatrial.ondemand.com/trial), navegue até a sua subconta e clique nela.
 
    ![Cockpit BTP](images/img-2.1.png)
 
-2. No painel esquerdo, escolha **Serviços → Service Marketplace**.
+2. No painel esquerdo, escolha **Services → Service Marketplace**.
 
    ![Cockpit BTP](images/img-2.2.png)
 
@@ -171,9 +171,9 @@ Você criará a configuração inicial do aplicativo no cockpit do SAP Mobile Se
     >Se você não vê o link `Suporte`, certifique-se de que está no nível da subconta, não no nível do espaço. Por favor, olhe novamente para o passo 2.
 
      
-5. Se for solicitado que você faça login, insira seu email ou nome de usuário para continuar e clique em **Avançar**.
+5. Se for solicitado que você faça login, insira seu email ou nome de usuário para continuar e clique em **Next**.
 
-6. Escolha a **Organização** e **Espaço** relevantes na lista suspensa e, em seguida, selecione **Abrir**.
+6. Selecione os campos **Organization** e **Space** relevantes na lista suspensa e, em seguida, selecione **Open**.
 
     ![BTP Cockpit](images/img-2.5.png)
 
@@ -189,25 +189,25 @@ Você criará a configuração inicial do aplicativo no cockpit do SAP Mobile Se
       >    ![BTP Cockpit](images/img-2.5.5.png)
     >- Se você vir o erro `Nenhuma organização existe`, limpe o cache do seu navegador e tente novamente, iniciando o cockpit de SAP Mobile Services via a opção `Abrir painel`.  
 
-7. Depois de fazer login no cockpit de SAP Mobile Services, clique em **Criar novo aplicativo** na página `Home` ou navegue até **Aplicativos móveis | Nativo/MDK | Novo**.
+7. Depois de fazer login no cockpit de SAP Mobile Services, clique em **Create New App** na página `Home` ou navegue até **Mobile Aplications | Native/MDK | New**.
 
     ![BTP Cockpit](images/img-2.6.png)
 
-8. Na etapa **Informações básicas**, forneça as informações necessárias e clique em **Avançar**.
+8. Na etapa **Basic Information**, forneça as informações necessárias e clique em **Next**.
 
     | Campo  | Valor                           |
     | ------ | ------------------------------- |
-    | `ID`   | com.sap.teched.ad181            |
-    | `Nome` | SAP MDK App - TechEd 2022 AD181 |
+    | `ID`   | com.lab2dev.mobile   |
+    | `Name` | SAP MDK App |
 
     ![BTP Cockpit](images/img-2.7.png) 
     
 
-9. Na etapa **Configurações do XSUAA**, continue com as configurações padrão e clique em **Avançar** para navegar para outras etapas.
+9. Na etapa **XSUAA Settings**, continue com as configurações padrão e clique em **Next** para navegar para outras etapas.
 
     ![BTP Cockpit](images/img-2.8.png) 
 
-10. Na etapa **Atribuir recursos**, escolha **Aplicativo Mobile Development Kit** no menu suspenso e clique em **Finish**.
+10. Na etapa **Assign Features**, escolha **Mobile Development Kit Application** no menu suspenso e clique em **Finish**.
 
     ![BTP Cockpit](images/img-2.9.png) 
 
