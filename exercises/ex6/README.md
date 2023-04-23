@@ -1,35 +1,31 @@
-# Exercise 6 - Adicionar uma seção de Menu de Usuário à aplicação
+# Exercício 6 - Adicionar uma seção de Menu de Usuário à aplicação
 
 Neste exercício, adicionaremos uma seção de Menu de Usuário à página Visão geral da aplicação. Como as funções no Menu de Usuário são genéricas e podem ser aplicadas a quase qualquer aplicação MDK, o Menu de Usuário foi pré-criado e será adicionado à aplicação como um Componente MDK.
 
-- [Exercise 6 - Adicionar uma seção de Menu de Usuário à aplicação](#exercise-6---adicionar-uma-seção-de-menu-de-usuário-à-aplicação)
-    - [Exercise 6.1 - Copie a aplicação UserMenuComponent para o seu espaço de trabalho](#exercise-61---copie-a-aplicação-usermenucomponent-para-o-seu-espaço-de-trabalho)
-    - [Exercise 6.2 - Copie as configurações da aplicação Component para a aplicação Base e modifique-as](#exercise-62---copie-as-configurações-da-aplicação-component-para-a-aplicação-base-e-modifique-as)
-    - [Exercise 6.3 - Atualizar as Aplicações de Referência](#exercise-63---atualizar-as-aplicações-de-referência)
-    - [Exercício 6.4 - Criar um arquivo CIM para o Componente de Menu do Usuário](#exercício-64---criar-um-arquivo-cim-para-o-componente-de-menu-do-usuário)
-    - [Exercício 6.5 - Adicione a seção do menu lateral do usuário](#exercício-65---adicione-a-seção-do-menu-lateral-do-usuário)
-    - [Exercício 6.6 - Redeploy da aplicação](#exercício-66---redeploy-da-aplicação)
-    - [Exercício 6.7 - Atualize o aplicativo MDK com novos metadados](#exercício-67---atualize-o-aplicativo-mdk-com-novos-metadados)
+- [Exercício 6 - Adicionar uma seção de Menu de Usuário à aplicação](#Exercício-6---adicionar-uma-seção-de-menu-de-usuário-à-aplicação)
+- [Exercício 6.1 - Copie a aplicação UserMenuComponent para o seu espaço de trabalho](#Exercício-61---copie-a-aplicação-usermenucomponent-para-o-seu-espaço-de-trabalho)
+- [Exercício 6.2 - Copie as configurações da aplicação Component para a aplicação Base e modifique-as](#Exercício-62---copie-as-configurações-da-aplicação-component-para-a-aplicação-base-e-modifique-as)
+- [Exercício 6.3 - Atualizar as Aplicações de Referência](#Exercício-63---atualizar-as-aplicações-de-referência)
+- [Exercício 6.4 - Criar um arquivo CIM para o Componente de Menu do Usuário](#exercício-64---criar-um-arquivo-cim-para-o-componente-de-menu-do-usuário)
+- [Exercício 6.5 - Adicione a seção do menu lateral do usuário](#exercício-65---adicione-a-seção-do-menu-lateral-do-usuário)
+- [Exercício 6.6 - Redeploy da aplicação](#exercício-66---redeploy-da-aplicação)
+- [Exercício 6.7 - Atualize o aplicativo MDK com novos metadados](#exercício-67---atualize-o-aplicativo-mdk-com-novos-metadados)
 - [Resumo](#resumo)
 
 O Menu de Usuário contém os seguintes itens.
 | Opção de Menu          | Descrição                                                                                                                                                                                            |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Sincronizar Mudanças` | Esta opção é aplicável apenas a aplicativos off-line. Ele permite enviar quaisquer alterações locais do cliente móvel para o backend e também baixar qualquer delta do backend para o cliente móvel. |
-| `Suporte`              | A opção de Suporte fornece uma maneira fácil para os usuários entrarem em contato com o suporte por meio de uma célula de contato. As informações de contato são definidas em globals.               |
-
-A opção Log de Atividade na página de Suporte permite que o usuário ligue / desligue o registro do cliente, defina o nível de registro e, se ativado no aplicativo de Serviços Móveis, também faça upload dos logs atuais do cliente. |
-
+| `Sincronizar Mudanças` | Esta opção é aplicável apenas a aplicativos off-line. Ele permite enviar quaisquer alterações locais do cliente móvel para o backend e também baixar qualquer dado do backend para o cliente móvel. |
+| `Suporte`              | A opção de Suporte fornece uma maneira fácil para os usuários entrarem em contato com o suporte por meio de campos de contato. As informações de contato são definidas em globals. A opção Log de Atividade na página de Suporte permite que o usuário ligue / desligue o registro do cliente, defina o nível de registro e, se ativado no aplicativo de Serviços Móveis, também faça upload dos logs atuais do cliente. |
 | `Verificar Atualizações` | Esta opção verificará se novos Metadados foram implantados na Atualização do Aplicativo de Serviços Móveis. Se novos Metadados forem encontrados, eles serão baixados e solicitarão ao usuário que aplique as alterações. |
 | `Sobre` | A página Sobre exibe o ID do usuário / dispositivo atual juntamente com o nome do aplicativo, versão do Metadados e informações da versão do cliente. |
 | `Redefinir` | Esta opção redefinirá completamente o cliente. Isso apagará quaisquer dados e metadados do aplicativo baixados e retornará o usuário à tela de boas-vindas. |
 
-
-## Exercise 6.1 - Copie a aplicação UserMenuComponent para o seu espaço de trabalho
+## Exercício 6.1 - Copie a aplicação UserMenuComponent para o seu espaço de trabalho
 
 Como o User Menu requer a configuração de algumas opções, copiaremos o componente para o nosso espaço de trabalho.
 
-1. Expanda o repositório da sessão `teched2022-AD181` | `exercises` | pasta `ex6`
+1. Expanda o repositório da sessão `teched2022-AD181` | `Exercícios` | pasta `ex6`
 2. Clique com o botão direito na pasta **UserMenuComponent** e selecione `Copiar`.
 
     ![MDK](images/6.1.1.png)
@@ -40,8 +36,7 @@ Como o User Menu requer a configuração de algumas opções, copiaremos o compo
 
     ![MDK](images/6.1.3.png)
 
-
-## Exercise 6.2 - Copie as configurações da aplicação Component para a aplicação Base e modifique-as
+## Exercício 6.2 - Copie as configurações da aplicação Component para a aplicação Base e modifique-as
 
 O User Menu Component foi projetado para ser usado em diferentes aplicativos. Em sua aplicação Base, você reutilizará as configurações existentes da sua aplicação de componente e as configurará de acordo com seus requisitos.
 
@@ -63,7 +58,7 @@ O User Menu Component foi projetado para ser usado em diferentes aplicativos. Em
 
 5. Selecione `UserSupportFaceTime.global` e defina o número de telefone para consultas de suporte FaceTime do usuário. Isso só se aplica a dispositivos iOS.
 
-    ![MDK](images/6.2.5.png) 
+    ![MDK](images/6.2.5.png)
 
 6. Selecione `UserSupportPhone.global` e defina o valor como o número de telefone para consultas de suporte do usuário.
 
@@ -73,7 +68,7 @@ O User Menu Component foi projetado para ser usado em diferentes aplicativos. Em
 
     ![MDK](images/6.2.7.png)
 
-### Exercise 6.3 - Atualizar as Aplicações de Referência
+### Exercício 6.3 - Atualizar as Aplicações de Referência
 
 Ao trabalhar com aplicações de componentes MDK, a fim de validar entradas e permitir a seleção de objetos do componente, as aplicações precisam de uma referência para a outra aplicação.
 
@@ -117,21 +112,21 @@ Iremos definir a entrada de aplicações de referência tanto na aplicação `MD
 
 Para que o aplicativo Componente de Menu do Usuário seja incluído durante a implantação do aplicativo `MDKApp` e para especificar as substituições do aplicativo `MDKApp` no aplicativo `UserMenuComponent`, é necessário um arquivo CIM no aplicativo `MDKApp`.
 
-1. Clique com o botão direito no arquivo `Application.app` no projeto `MDKApp` no painel do explorador e selecione `MDK: Novo CIM`
+1. Clique com o botão direito no arquivo `Application.app` no projeto `MDKApp` no painel do explorador e selecione `MDK: New CIM`
 
     ![MDK](images/6.4.1.png)
 
-2. Forneça as informações necessárias e clique em **Próximo** e, em seguida, clique em **Concluir**.
+2. Forneça as informações necessárias e clique em **Finish** para concluir.
 
     | Campo                 | Valor                                             |
     | --------------------- | ------------------------------------------------- |
-    | `Nome do Projeto`     | Selecione **UserMenuComponent** na lista suspensa |
-    | `Nome do Aplicativo`  | Selecione **UserMenu** na lista suspensa          |
-    | `Nome do Arquivo CIM` | Deixe como valor padrão                           |
+    | `Project Name`     | Selecione o primeiro **UserMenuComponent** na lista suspensa |
+    | `Application Name`  | Selecione o primeiro **UserMenu** na lista suspensa          |
+    | `CIM File Name` | Deixe como valor padrão                           |
 
     ![MDK](images/6.4.2.png)
 
-3. Na tabela de Pontos de Integração, clique no botão `Adicionar` e selecione `Ação` no menu.
+3. Na tabela de Integration Points, clique no botão `Add` e selecione `Action` no menu.
 
     ![MDK](images/6.4.3.png)
 
@@ -139,7 +134,7 @@ Para que o aplicativo Componente de Menu do Usuário seja incluído durante a im
 
     ![MDK](images/6.4.4.png)
 
-5. Digite `sync` no campo de pesquisa e dê um duplo clique no `SyncStartedMessage.action` do `MDKApp` para defini-lo na Expressão e clique em `OK`.    
+5. Digite `sync` no campo de pesquisa e dê um duplo clique no `SyncStartedMessage.action` do `MDKApp` para defini-lo na Expressão e clique em `OK`.
 
     ![MDK](images/6.4.5.png)
 
@@ -152,8 +147,8 @@ Para que o aplicativo Componente de Menu do Usuário seja incluído durante a im
     ![MDK](images/6.4.7.png)
     ![MDK](images/6.4.8.png)
 
-8. Da mesma forma, substitua as variáveis globais. 
-Na tabela de Pontos de Integração, clique no botão `Adicionar` e selecione `Global` no menu.  
+8. Da mesma forma, substitua as variáveis globais.
+Na tabela de Pontos de Integração, clique no botão `Add` e selecione `Global` no menu.  
 
     ![MDK](images/6.4.9.png)
 
@@ -161,7 +156,7 @@ Na tabela de Pontos de Integração, clique no botão `Adicionar` e selecione `G
 
     ![MDK](images/6.4.4.png)
 
-10. Dê um duplo clique no `AppDefintion_Version.global` do `MDKApp` para defini-lo na Expressão e clique em `OK`.    
+10. Dê um duplo clique no `AppDefintion_Version.global` do `MDKApp` para defini-lo na Expressão e clique em `OK`.
 
     ![MDK](images/6.4.10.png)
 
@@ -176,7 +171,7 @@ Na tabela de Pontos de Integração, clique no botão `Adicionar` e selecione `G
 
 13. Da mesma forma, adicione pontos de integração substituindo as outras variáveis globais `ApplicationName.global`, `UserSupportEmail.global`, `UserSupportFaceTime.global` e `UserSupportPhone.global`.
 
-    ![MDK](images/6.4.14.png) 
+    ![MDK](images/6.4.14.png)
 
 ### Exercício 6.5 - Adicione a seção do menu lateral do usuário
 
@@ -200,7 +195,7 @@ Abra a página `Overview.page` e arraste e solte um Fragmento `SideDrawerUserMen
 
 | Passos                                                                                                                                                                                               |         Android          |                      iOS |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------: | -----------------------: |
-| 1. Inicie o aplicativo no seu dispositivo, autentique-se com o código de acesso ou autenticação biométrica, se solicitado. Você verá uma janela pop-up _Nova Versão Disponível_, toque em **Agora**. | ![MDK](images/6.7.1.png) | ![MDK](images/6.7.2.png) |
+| 1. Inicie o aplicativo no seu dispositivo, autentique-se com o código de acesso ou autenticação biométrica, se solicitado. Você verá uma janela pop-up *Nova Versão Disponível*, toque em **Agora**. | ![MDK](images/6.7.1.png) | ![MDK](images/6.7.2.png) |
 | 2. Agora você verá que a página Overview possui uma seção de menu do usuário.                                                                                                                        | ![MDK](images/6.7.3.png) | ![MDK](images/6.7.4.png) |
 
 ## Resumo

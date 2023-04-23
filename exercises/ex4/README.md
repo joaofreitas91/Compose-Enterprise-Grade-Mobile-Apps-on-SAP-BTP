@@ -3,13 +3,13 @@
 A entidade Produto é uma entidade de mídia OData com a propriedade OData `Picture` com tipo `Edm.Stream`. O estado inicial do serviço OData CAP gerado não tem mídia para nenhum produto. Você irá atualizar a entidade Produto fazendo upload de mídia para ela.
 
 - [Exercício 4 - Fazer Upload de uma Mídia para a Entidade Produto](#exercício-4---fazer-upload-de-uma-mídia-para-a-entidade-produto)
-    - [Exercício 4.1 - Adicionar uma caixa de mensagem genérica](#exercício-41---adicionar-uma-caixa-de-mensagem-genérica)
-  - [Exercise 4.2 - Adicionar Controle de Anexo na Página de Edição de Produto](#exercise-42---adicionar-controle-de-anexo-na-página-de-edição-de-produto)
-    - [Exercício 4.3 - Validar Anexo antes de salvar a Entidade Produto](#exercício-43---validar-anexo-antes-de-salvar-a-entidade-produto)
-  - [Exercício 4.4 - Vinculando a Ação de Upload de Fluxo à Ação de Atualização de Produto](#exercício-44---vinculando-a-ação-de-upload-de-fluxo-à-ação-de-atualização-de-produto)
-  - [Exercício 4.5 - Redeploy da aplicação](#exercício-45---redeploy-da-aplicação)
-    - [Exercício 4.5 - Atualize o aplicativo MDK com novos metadados](#exercício-45---atualize-o-aplicativo-mdk-com-novos-metadados)
-  - [Resumo](#resumo)
+- [Exercício 4.1 - Adicionar uma caixa de mensagem genérica](#exercício-41---adicionar-uma-caixa-de-mensagem-genérica)
+- [Exercise 4.2 - Adicionar Controle de Anexo na Página de Edição de Produto](#exercise-42---adicionar-controle-de-anexo-na-página-de-edição-de-produto)
+- [Exercício 4.3 - Validar Anexo antes de salvar a Entidade Produto](#exercício-43---validar-anexo-antes-de-salvar-a-entidade-produto)
+- [Exercício 4.4 - Vinculando a Ação de Upload de Fluxo à Ação de Atualização de Produto](#exercício-44---vinculando-a-ação-de-upload-de-fluxo-à-ação-de-atualização-de-produto)
+- [Exercício 4.5 - Redeploy da aplicação](#exercício-45---redeploy-da-aplicação)
+- [Exercício 4.5 - Atualize o aplicativo MDK com novos metadados](#exercício-45---atualize-o-aplicativo-mdk-com-novos-metadados)
+- [Resumo](#resumo)
 
 ### Exercício 4.1 - Adicionar uma caixa de mensagem genérica
 
@@ -17,7 +17,7 @@ A entidade Produto é uma entidade de mídia OData com a propriedade OData `Pict
 
     ![MDK](images/4.0.1.png)
 
-2. Escolha **MDK Message Actions** em **Categoria** | clique em **Message Action** | **Próximo**.
+2. Escolha **Message** em **Category** | clique em **Message** | **Next**.
 
     ![MDK](images/4.0.2.png)
 
@@ -25,7 +25,7 @@ A entidade Produto é uma entidade de mídia OData com a propriedade OData `Pict
 
     | Propriedade     | Valor                              |
     | --------------- | ---------------------------------- |
-    | `Action Name`   | GenericMessageBox                  |
+    | `Name`   | GenericMessageBox                  |
     | `Type`          | Select `Message` from the dropdown |
     | `Message`       | Message                            |
     | `OKCaption`     | OK                                 |
@@ -35,17 +35,17 @@ A entidade Produto é uma entidade de mídia OData com a propriedade OData `Pict
 
     ![MDK](images/4.0.3.png)
 
-4. Clique em **Próximo** e depois em **Concluir** na etapa de confirmação.
+4. Clique em  **Finish** na etapa de confirmação.
 
 ## Exercise 4.2 - Adicionar Controle de Anexo na Página de Edição de Produto
 
-1. Acesse `Páginas` | `Produtos` | `Products_Edit.page`. O modelo CRUD gera automaticamente essa página com todos os campos do conjunto de entidades.
+1. Acesse `Pages` | `Products` | `Products_Edit.page`. O modelo CRUD gera automaticamente essa página com todos os campos do conjunto de entidades.
 
-2. Arraste e solte um controle de **Anexo** na área da página (por exemplo, logo antes do controle *ListPicker* do fornecedor).
+2. Arraste e solte um controle de **Attachment** na área da página (por exemplo, logo antes do controle *Supplier_SupplierID*).
 
     ![MDK](images/4.1.1.gif)
 
-3. Forneça as informações abaixo:
+3. Nas propriedades do Attachment forneça as informações abaixo:
 
     | Campo                  | Valor                          |
     | ---------------------- | ------------------------------ |
@@ -56,17 +56,17 @@ A entidade Produto é uma entidade de mídia OData com a propriedade OData `Pict
 
     ![MDK](images/4.1.2.png)
 
-4. Se um Produto já possui uma mídia, você pode querer exibi-la enquanto atualiza o registro. Você pode escrever uma lógica para obter o anexo atual. Para a propriedade de Valor do controle, clique no ícone **Criar uma regra**.
+4. Se um Produto já possui uma mídia, você pode querer exibi-la enquanto atualiza o registro. Você pode escrever uma lógica para obter o anexo atual. Para a propriedade de Valor do controle, clique no ícone **Create a Rule**.
 
     ![MDK](images/4.1.3.png)
 
-5. Selecione *Tipo de objeto* como **Regra** e *Pastas* como **/MDKApp/Rules/Products**. Clique em **OK**.
+5. Selecione *Object Type* como **Rule** e *Folders* como **/MDKApp/Rules/Products**. Clique em **OK**.
 
     ![MDK](images/4.1.4.png)
 
     > É bom manter todos os arquivos relacionados na mesma pasta.
 
-6. Forneça um Nome **Products_GetCurrentAttachment** para a sua regra, clique em **Próximo** e **Concluir** a etapa de confirmação.
+6. Forneça o Nome como **Products_GetCurrentAttachment** para a sua regra e **Finish** a etapa de confirmação.
 
     ![MDK](images/4.1.5.png)
 
@@ -91,15 +91,15 @@ A entidade Produto é uma entidade de mídia OData com a propriedade OData `Pict
     }
     ```
 
-8. Como há apenas uma propriedade de Stream disponível para a entidade de Produto, é importante informar o usuário caso ele tente anexar mais de uma mídia. Acesse a aba **Evento**, clique em **Criar uma regra/ação** para o evento `OnValueChange`.
+8. Como há apenas uma propriedade de Stream disponível para a entidade de Produto, é importante informar o usuário caso ele tente anexar mais de uma mídia. Acesse a aba **Event**, clique em **Create a Rule/Action** para o evento `OnValueChange`.
 
     ![MDK](images/4.1.7.png)
 
-9. Selecione *Tipo de objeto* como **Regra** e *Pastas* como **/MDKApp/Rules/Products**. Clique em **OK**.
+9. Selecione *Object Type* como **Rule** e *Folders* como **/MDKApp/Rules/Products**. Clique em **OK**.
 
     ![MDK](images/4.1.4.png)
 
-10. Forneça um nome **Products_AttachmentOnValueChange** para sua regra, clique em **Próximo** e **Concluir** na etapa de confirmação.
+10. Forneça um nome **Products_AttachmentOnValueChange** para sua regra e clique **Finish** na etapa de confirmação.
 
     ![MDK](images/4.1.8.png)
 
@@ -123,19 +123,19 @@ A entidade Produto é uma entidade de mídia OData com a propriedade OData `Pict
     ```
 ### Exercício 4.3 - Validar Anexo antes de salvar a Entidade Produto
 
-1. A regra `Products_AttachmentOnValueChange.js` alerta o usuário sobre o número máximo permitido de imagens para o Produto. No entanto, mais de uma imagem pode ser adicionada. No caso de haver mais de uma imagem anexada, o usuário não deve ser capaz de salvar o registro. Eles só deveriam ser capazes de salvar o registro quando houver apenas uma imagem anexada a uma entidade de produto. Você escreverá uma lógica de validação de anexo e a vinculará ao item `Salvar` da barra de ações. Selecione o item de barra de ações **Salvar** e navegue até sua guia de **Evento**. Remova o vínculo existente.
+1. A regra `Products_AttachmentOnValueChange.js` alerta o usuário sobre o número máximo permitido de imagens para o Produto. No entanto, mais de uma imagem pode ser adicionada. No caso de haver mais de uma imagem anexada, o usuário não deve ser capaz de salvar o registro. Eles só deveriam ser capazes de salvar o registro quando houver apenas uma imagem anexada a uma entidade de produto. Você escreverá uma lógica de validação de anexo e a vinculará ao item `Save` da barra de ações. Selecione o item de barra de ações **Save** e navegue até sua guia de **Events**. Remova o vínculo existente.
 
     ![MDK](images/4.2.1.png)
 
-2. Quando removido, clique em **Criar uma regra/ação** para o evento `OnPress` para o item `Salvar` da barra de ações.
+2. Quando removido, clique em **Create a rule/action** para o evento `OnPress` para o item `Save` da barra de ações.
 
     ![MDK](images/4.2.2.png)
 
-3. Selecione *Tipo de objeto* como **Regra** e *Pastas* como **/MDKApp/Rules/Products**. Clique em **OK**.
+3. Selecione *Object Type* como **Rule** e *Folders* como **/MDKApp/Rules/Products**. Clique em **OK**.
 
     ![MDK](images/4.1.4.png)
 
-4. Forneça um Nome **Products_ValidateAttachment** para sua regra, clique em **Próximo** e conclua a etapa de confirmação em **Concluir**.
+4. Forneça um Nome **Products_ValidateAttachment** para sua regra, clique em **Finish** na etapa de confirmação.
 
     ![MDK](images/4.2.3.png)
 
@@ -163,7 +163,7 @@ A entidade Produto é uma entidade de mídia OData com a propriedade OData `Pict
 
 O modelo gera ações relacionadas ao upload de fluxo para o backend, portanto, quando um Produto é atualizado, você pode querer acionar o upload do fluxo em seu sucesso.
 
-Acesse `Actions` | `Products` |  `Products_UpdateEntity.action` e substitua o vínculo existente para a **Ação de Sucesso** para `Products_UploadStream.action`.
+Acesse `Actions` | `Products` |  `Products_UpdateEntity.action` e substitua o vínculo existente para a **Success Action** para `Products_UploadStream.action`.
 
 ![MDK](images/4.3.1.png)
 

@@ -2,18 +2,19 @@
 
 Neste exercício, você irá criar uma aplicação MDK a partir de um modelo.
 - [Exercício 2 - Criar uma aplicação a partir do modelo MDK](#exercício-2---criar-uma-aplicação-a-partir-do-modelo-mdk)
-    - [Exercício 2.1 - Configurar seu Serviço OData como Destino em Serviços Móveis](#exercício-21---configurar-seu-serviço-odata-como-destino-em-serviços-móveis)
-    - [Exercício 2.2 - Criar o projeto MDKApp a partir de um modelo](#exercício-22---criar-o-projeto-mdkapp-a-partir-de-um-modelo)
-    - [Exercício 2.3 - Mudando o workspace para a pasta de projetos](#exercício-23---mudando-o-workspace-para-a-pasta-de-projetos)
-    - [Exercício 2.4 - Implantar a aplicação](#exercício-24---implantar-a-aplicação)
-    - [Exercício 2.5 - Exibir o código QR para embarcar o aplicativo móvel](#exercício-25---exibir-o-código-qr-para-embarcar-o-aplicativo-móvel)
-    - [Exercício 2.6 - Executando o aplicativo](#exercício-26---executando-o-aplicativo)
-  - [Resumo](#resumo)
+- [Exercício 2.1 - Configurar seu Serviço OData como Destino em Serviços Móveis](#exercício-21---configurar-seu-serviço-odata-como-destino-em-serviços-móveis)
+- [Exercício 2.2 - Criar o projeto MDKApp a partir de um modelo](#exercício-22---criar-o-projeto-mdkapp-a-partir-de-um-modelo)
+- [Exercício 2.3 - Mudando o workspace para a pasta de projetos](#exercício-23---mudando-o-workspace-para-a-pasta-de-projetos)
+- [Exercício 2.4 - Implantar a aplicação](#exercício-24---implantar-a-aplicação)
+- [Exercício 2.5 - Exibir o código QR para embarcar o aplicativo móvel](#exercício-25---exibir-o-código-qr-para-embarcar-o-aplicativo-móvel)
+- [Exercício 2.6 - Executando o aplicativo](#exercício-26---executando-o-aplicativo)
+- [Resumo](#resumo)
 
-### Exercício 2.1 - Configurar seu Serviço OData como Destino em Serviços Móveis
+### Exercício 2.1 - Configurar seu Serviço OData como uma Destination em Serviços Móveis
 
 1. Acesse o Cockpit de Serviços Móveis. Se a sessão dos Serviços Móveis tiver expirado, faça login novamente.
-2. Navegue até *SAP MDK App - TechEd 2022 AD181* (`com.sap.teched.ad181`) e selecione **Mobile Connectivity** em Recursos atribuídos.
+
+2. Navegue até *SAP MDK App* e selecione **Mobile Connectivity** em Recursos atribuídos.
 
     ![MDK](images/2.1.1.png)
 
@@ -62,11 +63,11 @@ Neste exercício, você irá criar uma aplicação MDK a partir de um modelo.
 
     ![BAS](images/1.2.gif)
 
-2. Selecione **Projeto MDK** e clique em **Iniciar**.
+2. Selecione **MDK Project** e clique em **Iniciar**.
 
     ![MDK](images/2.2.2.png)
 
-    > Se você não ver a opção **Projeto MDK**, verifique se o seu espaço Dev terminou de carregar ou atualize a página no seu navegador e tente novamente.
+    > Se você não ver a opção **MDK Project**, verifique se o seu espaço Dev terminou de carregar ou atualize a página no seu navegador e tente novamente.
 
     > Esta tela só aparecerá quando a sua sessão de login no CF tiver expirado. Insira suas credenciais de login, clique em Sign in. Depois de ter efetuado login com sucesso no Cloud Foundry, selecione a sua organização e espaço do Cloud Foundry onde você configurou a configuração inicial para o seu aplicativo MDK e clique em Apply.
     >![MDK](images/2.2.3.png)
@@ -74,37 +75,37 @@ Neste exercício, você irá criar uma aplicação MDK a partir de um modelo.
     >- Se você não ver nenhuma opção na lista suspensa, por favor, verifique se o seu ambiente do Cloud Foundry é uma paisagem estendida. Para isso, verifique o valor do `Endpoint API` para a organização do Cloud Foundry na página de visão geral do cockpit do SAP BTP.
     >    ![BTP Cockpit](images/img-2.5.1.png)
 
-3. No passo *Informações básicas*, forneça as seguintes informações e clique em **Avançar**:
+3. No passo *Basic Information*, forneça as seguintes informações e clique em **Next**:
 
     | Campo                              | Valor                                                                                                                      |
     | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-    | `Tipo de modelo MDK`               | Selecione `CRUD` na lista suspensa                                                                                         |
-    | `Nome do seu projeto`              | Forneça um nome de sua escolha. `MDKApp` é usado para este tutorial                                                        |
-    | `Nome da sua aplicação`            | <nome padrão é o mesmo que o nome do projeto, você pode fornecer qualquer nome de sua escolha>                             |
-    | `Versão de cliente MDK de destino` | Deixe a seleção padrão como `MDK 6.0+ (Para uso com clientes MDK 6.0 ou posteriores)`                                      |
-    | `Escolha uma pasta de destino`     | Por padrão, a pasta de destino usa o caminho raiz do projeto. No entanto, você pode escolher um caminho de pasta diferente |
+    | `MDK Template Type`               | Selecione `CRUD` na lista suspensa                                                                                         |
+    | `Your Project Name`              | Forneça um nome de sua escolha. `MDKApp` é usado para este tutorial                                                        |
+    | `Your Application Name`            | por padrão é o mesmo que o nome do projeto, você pode fornecer qualquer nome de sua escolha                            |
+    | `Target MDK Client Version` | Deixe a seleção padrão como `MDK 6.0+ (For use with MDK 6.0 or later clients)`                                      |
+    | `Choose a target folder`     | Por padrão, a pasta de destino usa o caminho raiz do projeto. No entanto, você pode escolher um caminho de pasta diferente |
 
     ![MDK](images/2.2.4.png) 
 
 
-4. Na etapa *Configuração de Serviço*, forneça as informações abaixo e clique em **Avançar**:
+4. Na etapa *Service Configuration*, forneça as informações abaixo e clique em **Next**:
 
     | Campo                              | Valor                                                                                                                                                                               |
     | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | `Fonte de Dados`                   | Selecione `Mobile Services` na lista suspensa                                                                                                                                       |
-    | `Landscape do Mobile Services`     | Selecione `standard` na lista suspensa                                                                                                                                              |
-    | `Id do Aplicativo`                 | Selecione `com.sap.teched.ad181` na lista suspensa (este app foi configurado conforme [exercício de pré-requisito](./../ex0/README.md#set-up-initial-configuration-for-an-mdk-app)) |
-    | `Destino`                          | Selecione `ESPM` na lista suspensa                                                                                                                                                  |
-    | `Insira um caminho para o serviço` | Deixe como está                                                                                                                                                                     |
+    | `Data Source`                   | Selecione `Mobile Services` na lista suspensa                                                                                                                                       |
+    | `Mobile Services Landscape`     | Selecione `standard` na lista suspensa                                                                                                                                              |
+    | `Application Id`                 | Selecione `com.lab2dev.mobile` na lista suspensa (este app foi configurado conforme [exercício de pré-requisito](./../ex0/README.md#set-up-initial-configuration-for-an-mdk-app)) |
+    | `Destination`                          | Selecione `ESPM` na lista suspensa                                                                                                                                                  |
+    | `Enter a path to service` | Deixe como está                                                                                                                                                                     |
     | `Habilitar Offline`                | Está habilitado por padrão                                                                                                                                                          |
 
     ![MDK](images/2.2.5.png)
 
-    Independentemente de estar criando um aplicativo online ou offline, essa etapa é necessária para que o aplicativo se conecte a um serviço OData. Ao construir um aplicativo móvel MDK, ele assume que o serviço OData foi criado e que o destino que aponta para esse serviço foi configurado no Mobile Services.
+    Independentemente de estar criando um aplicativo online ou offline, essa etapa é necessária para que o aplicativo se conecte a um serviço OData. Ao construir um aplicativo móvel MDK, ele assume que o serviço OData foi criado e que a destination que aponta para esse serviço foi configurado no Mobile Services.
 
-    Como temos Habilitar Offline definido como Sim, o aplicativo gerado será habilitado para offline no cliente móvel MDK.
+    Como definimos a opção Enable Offline como Sim, o aplicativo gerado será habilitado para offline no cliente móvel MDK.
 
-5. Na etapa *Coleções de Dados*, escolha **Sim** para selecionar todas as coleções de dados e clique em **Concluir** para concluir a criação do projeto.
+5. Na etapa *Data Collections*, escolha **Yes** para selecionar todas as coleções de dados e clique em **Finish** para concluir a criação do projeto.
    
     ![MDK](images/2.2.6.png)
 
@@ -140,7 +141,7 @@ Até agora, você aprendeu como construir um aplicativo MDK no editor SAP Busine
 
     ![MDK](images/2.4.2.png)
 
-    Se desejar habilitar a origem para depurar o pacote implantado, escolha Sim.
+    Se desejar habilitar a origem para depurar o pacote implantado, escolha Yes.
 
     ![MDK](images/2.4.3.png)
 

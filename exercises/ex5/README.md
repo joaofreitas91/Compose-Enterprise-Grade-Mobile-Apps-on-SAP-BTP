@@ -1,18 +1,18 @@
-# Exercício 5 - Usar a navegação de gaveta lateral para sua aplicação
+# Exercício 5 - Usar side drawer navigation para sua aplicação
 
-Neste exercício, você criará uma nova página usando o tipo de página de navegação de gaveta lateral e adicionará itens de gaveta lateral para exibir informações.
+Neste exercício, você criará uma nova página usando o tipo de página de side drawer navigation e adicionará side drawer items para exibir informações.
 
-- [Exercício 5 - Usar a navegação de gaveta lateral para sua aplicação](#exercício-5---usar-a-navegação-de-gaveta-lateral-para-sua-aplicação)
-    - [Exercício 5.1 - Criar uma página de navegação de gaveta lateral](#exercício-51---criar-uma-página-de-navegação-de-gaveta-lateral)
-    - [Exercício 5.2 - Adicionar itens adicionais à seção de gaveta lateral](#exercício-52---adicionar-itens-adicionais-à-seção-de-gaveta-lateral)
-    - [Exercício 5.3 - Defina a primeira página como a página de visão geral](#exercício-53---defina-a-primeira-página-como-a-página-de-visão-geral)
-    - [Exercício 5.4 - Redistribua o aplicativo](#exercício-54---redistribua-o-aplicativo)
-    - [Exercício 5.5 - Atualize o aplicativo MDK com novos metadados](#exercício-55---atualize-o-aplicativo-mdk-com-novos-metadados)
-  - [Resumo](#resumo)
+- [Exercício 5 - Usar a side drawer navigation para sua aplicação](#exercício-5---usar-side-drawer-navigation-para-sua-aplicação)
+- [Exercício 5.1 - Criar uma side drawer navigation page](#exercício-51---criar-uma-side-drawer-navigation-page)
+- [Exercício 5.2 - Adicionar itens à seção side drawer](#exercício-52---adicionar-itens-à-seção-side-drawer)
+- [Exercício 5.3 - Defina a primeira página como a página de visão geral](#exercício-53---defina-a-primeira-página-como-a-página-de-visão-geral)
+- [Exercício 5.4 - Redistribua o aplicativo](#exercício-54---redistribua-o-aplicativo)
+- [Exercício 5.5 - Atualize o aplicativo MDK com novos metadados](#exercício-55---atualize-o-aplicativo-mdk-com-novos-metadados)
+- [Resumo](#resumo)
 
-### Exercício 5.1 - Criar uma página de navegação de gaveta lateral
+### Exercício 5.1 - Criar uma side drawer navigation page
 
-A página de navegação de gaveta lateral fornece uma opção de navegação de menu de slide-out e pode ser usada para fornecer funcionalidade semelhante ao tipo de página de navegação inferior, mas suporta mais de 5 áreas dentro de sua aplicação. Este tipo de página só pode ser usado como a `MainPage` no `Application.app`.
+A página de side drawer navigation fornece uma opção de navegação de menu de slide-out e pode ser usada para fornecer funcionalidade semelhante ao tipo de página de navegação inferior, mas suporta mais de 5 áreas dentro de sua aplicação. Este tipo de página só pode ser usado como a `MainPage` no `Application.app`.
 
 1. No projeto SAP Business Application Studio, clique com o botão direito do mouse em `Pages` | `MDK: New Page`.
 
@@ -22,15 +22,15 @@ A página de navegação de gaveta lateral fornece uma opção de navegação de
 
     ![MDK](images/5.1.2.png)
 
-3. Insira o `Nome da Página` como **Overview** e clique em `Next` e `Finish` na etapa de confirmação.
+3. Insira o `Nome da Página` como **Overview** e clique em `Finish` na etapa de confirmação.
 
     ![MDK](images/5.1.3.png)
 
-   A página gerada tem um cabeçalho e uma seção de gaveta lateral padrão.
+   A página gerada tem um cabeçalho e uma seção de side drawer padrão.
    
     ![MDK](images/5.1.4.png)
 
-  No próximo passo, você atualizará o esquema padrão da página e adicionará algumas seções adicionais da gaveta lateral.
+  No próximo passo, você atualizará o esquema padrão da página e adicionará algumas seções adicionais da side drawer.
 
 4. Selecione a área do cabeçalho e clique no ícone `link` para a propriedade **Headline** para abrir o Object Browser. Escolha **Control & Client Data** no menu suspenso e clique duas vezes em `UserId(Value)`. Clique em **OK** para definir o valor no campo de controle.
 
@@ -62,11 +62,11 @@ A página de navegação de gaveta lateral fornece uma opção de navegação de
 
     ![MDK](images/5.1.8.png)
 
-### Exercício 5.2 - Adicionar itens adicionais à seção de gaveta lateral
+### Exercício 5.2 - Adicionar itens à seção side drawer
 
 Agora você adicionará itens adicionais para exibir outras informações.
 
-1. Clique no botão **Adicionar** e adicione mais 3 itens.
+1. Clique no botão **Add** e adicione mais 3 itens.
 
     Agora você terá um total de 4 itens.
 
@@ -76,10 +76,10 @@ Agora você adicionará itens adicionais para exibir outras informações.
 
     | Propriedade  | Valor                                                                                                     |
     | ------------ | --------------------------------------------------------------------------------------------------------- |
-    | `Imagem`     | sap-icon://product                                                                                        |
-    | `Nome`       | Products                                                                                                  |
-    | `PageToOpen` | clique no ícone de 3 pontos, selecione o `Navegador de objetos` e vincule-o à página *Products_List.page* |
-    | `Título`     | Products                                                                                                  |
+    | `Image`     | sap-icon://product                                                                                        |
+    | `Name`       | Products                                                                                                  |
+    | `PageToOpen` | clique no ícone de 3 pontos, selecione o `Object Browser` e vincule-o à página *Products_List.page* |
+    | `Title`     | Products                                                                                                  |
 
     ![MDK](images/5.2.2.png)
 
@@ -87,10 +87,10 @@ Agora você adicionará itens adicionais para exibir outras informações.
 
     | Propriedade  | Valor                                                                                                      |
     | ------------ | ---------------------------------------------------------------------------------------------------------- |
-    | `Imagem`     | sap-icon://supplier                                                                                        |
-    | `Nome`       | Suppliers                                                                                                  |
-    | `PageToOpen` | clique no ícone de 3 pontos, selecione o `Navegador de objetos` e vincule-o à página *Suppliers_List.page* |
-    | `Título`     | Suppliers                                                                                                  |
+    | `Image`     | sap-icon://supplier                                                                                        |
+    | `Name`       | Suppliers                                                                                                  |
+    | `PageToOpen` | clique no ícone de 3 pontos, selecione o `Object Browser` e vincule-o à página *Suppliers_List.page* |
+    | `Title`     | Suppliers                                                                                                  |
 
     ![MDK](images/5.2.3.png)
 
@@ -98,10 +98,10 @@ Agora você adicionará itens adicionais para exibir outras informações.
 
     | Propriedade  | Valor                                                                                                              |
     | ------------ | ------------------------------------------------------------------------------------------------------------------ |
-    | `Imagem`     | sap-icon://sales-order                                                                                             |
-    | `Nome`       | Sales Order                                                                                                        |
-    | `PageToOpen` | clique no ícone de 3 pontos, selecione o `Navegador de objetos` e vincule-o à página *SalesOrderHeaders_List.page* |
-    | `Título`     | Sales Order                                                                                                        |
+    | `Image`     | sap-icon://sales-order                                                                                             |
+    | `Name`       | Sales Order                                                                                                        |
+    | `PageToOpen` | clique no ícone de 3 pontos, selecione o `Object Browser` e vincule-o à página *SalesOrderHeaders_List.page* |
+    | `Title`     | Sales Order                                                                                                        |
 
     ![MDK](images/5.2.4.png)
 
@@ -114,7 +114,7 @@ Agora você adicionará itens adicionais para exibir outras informações.
 
 No projeto gerado pelo modelo, já há uma página chamada *Main.page*, que também é a página que abre após o sucesso do registro. Para este exercício, você irá alterar o comportamento padrão do lançamento do aplicativo, vinculando-o à *página Visão geral*. Por favor, note que o tipo de página de navegação Side Drawer só pode ser usado como MainPage em Application.app, você não pode abri-lo estando em qualquer outra página.
 
-1. Clique no arquivo `Application.app`, selecione a **página Visão geral** para a propriedade `Página principal`.
+1. Clique no arquivo `Application.app`, selecione a **Overview.page** para a propriedade `Main Page`.
 
     ![MDK](images/5.3.1.png)
 

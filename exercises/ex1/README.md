@@ -3,9 +3,9 @@
 Neste exercício, você implantará seu projeto SAP Cloud Application Programming Model (CAP) na plataforma SAP Business Technology Platform (BTP), ambiente Cloud Foundry usando o serviço SAP HANA Cloud.
 
 - [Exercício 1 - Implantar um Serviço de Negócios CAP na SAP Business Technology Platform](#exercício-1---implantar-um-serviço-de-negócios-cap-na-sap-business-technology-platform)
-    - [Exercício 1.1 - Alterar o espaço de trabalho para a pasta de projetos](#exercício-11---alterar-o-espaço-de-trabalho-para-a-pasta-de-projetos)
-  - [Exercício 1.2 - Implantar um projeto CAP na SAP Business Technology Platform](#exercício-12---implantar-um-projeto-cap-na-sap-business-technology-platform)
-  - [Resumo](#resumo)
+- [Exercício 1.1 - Alterar o espaço de trabalho para a pasta de projetos](#exercício-11---alterar-o-espaço-de-trabalho-para-a-pasta-de-projetos)
+- [Exercício 1.2 - Implantar um projeto CAP na SAP Business Technology Platform](#exercício-12---implantar-um-projeto-cap-na-sap-business-technology-platform)
+- [Resumo](#resumo)
 
 ### Exercício 1.1 - Alterar o espaço de trabalho para a pasta de projetos
 
